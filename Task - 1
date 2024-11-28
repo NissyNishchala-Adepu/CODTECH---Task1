@@ -1,0 +1,40 @@
+#Student Grade Tracker with Python Program
+
+def calculate_gpa(average):
+    if average >= 90:
+        return 'O', 10.0
+    elif average >= 80:
+        return 'A', 9.0
+    elif average >= 70:
+        return 'B', 8.0
+    elif average >= 60:
+        return 'C', 7.0
+    elif average >= 50:
+        return 'D', 6.0
+    else:
+        return 'F', 0.0
+
+
+def main():
+    grades = {}
+    subjects = int(input("Enter the number of subjects: "))
+
+    for _ in range(subjects):
+        subject_name = input("Enter the subject name: ")
+        grade = float(input(f"Enter the grade for {subject_name}: "))
+        grades[subject_name] = grade
+
+    average_grade = sum(grades.values()) / len(grades)
+    letter_grade, gpa = calculate_gpa(average_grade)
+
+    print("\nGrades Summary:")
+    for subject, grade in grades.items():
+        print(f"{subject}: {grade}")
+
+    print(f"\nAverage Grade: {average_grade:.2f}")
+    print(f"Letter Grade: {letter_grade}")
+    print(f"GPA: {gpa:.2f}")
+
+
+if __name__ == "__main__":
+    main()
