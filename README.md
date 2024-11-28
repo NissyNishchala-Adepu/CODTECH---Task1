@@ -11,3 +11,5 @@
 4. After collecting all the gardes, it calculates the average garde.
 5. Finally, it displays the grades for each subject, the average garde, the letter garde, and thhe GPA.
    ![Screenshot 2024-11-28 180709](https://github.com/user-attachments/assets/089abff2-86cf-46d2-b388-4a2e67b106ec)
+   ![Screenshot 2024-11-28 181228](https://github.com/user-attachments/assets/b9dd14c6-e772-4d2f-a1ea-c6e24429b36e)
+
